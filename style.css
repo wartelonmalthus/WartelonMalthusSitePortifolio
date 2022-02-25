@@ -278,7 +278,7 @@ section#Home  div.texto h5{
         width: 100%;
         margin-bottom: 5px;
     }
-    #botao-contato{
+   #botao-contato{
         padding: 10px;
         margin: 15px 10px 10px 0 
         
@@ -288,7 +288,18 @@ section#Home  div.texto h5{
         margin: 10px;   
     }
 
+@media (max-width: 382px){
+   section#Home div.texto #botao-contato{
+        display: block;
+    }
 
+   section#Home div.texto #botao-Meusprojetos{
+        display: block;
+        margin:16px 0px 10px 0px;
+        text-align: center;
+    }
+
+}
     
 
 
