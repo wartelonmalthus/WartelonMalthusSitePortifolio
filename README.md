@@ -1,7 +1,7 @@
 # WartelonMalthusSitePortifolio
 
 
-<p align = "center">
+<p>
 Uma landing page moderna e criativa para usar como meu curriculo e portifolio 
 
 https://wartelonmalthus.github.io/WartelonMalthusSitePortifolio/
