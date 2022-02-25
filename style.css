@@ -1,0 +1,526 @@
+
+/* Resetecss */
+*, 
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--white-text);
+    scroll-behavior: smooth;
+    
+    
+}
+
+:root{
+    --blue-primary: #020412;
+    --white-text: #fff2f2;
+    --yellow-primary: #e8d524;
+
+}
+main{
+    background-color: var(--blue-primary);
+}
+/* o Cabeçalho header */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+
+}
+ header nav{
+    animation-name: navanimation;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+   
+   
+}
+@keyframes navanimation {
+    0% {
+        translate:(100px);
+        opacity: 0;
+        transition: 1s;
+    }
+
+    100% {
+        transform: (0px);
+        opacity: 1;
+    }   
+} 
+
+header nav  h3{
+    font-size: 25px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+}
+
+header nav ul li{
+    margin: 20px;
+}
+
+@media (max-width: 600px){
+    header {
+        display: block;
+
+    }
+
+    header h3{
+        text-align: center;
+        margin: 20px;
+
+    }
+    header nav ul{
+        
+        padding: 5px;
+       
+
+    }
+    header nav ul li{
+        border: 2px dashed var(--yellow-primary);
+
+        padding: 8px;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+section#Home{    
+    
+    margin: 0 auto;
+    width: 72%;
+    display: flex;
+    align-items: center;
+    height: auto;
+
+}
+
+/* Primeira div class = texto */
+section#Home  div.texto{
+   margin: 20px 20px 20px 0;
+   width: 60%;
+   height: auto;
+
+   
+}
+
+
+section#Home  div.texto h1{
+    font-size: 39px;
+    font-family: 'Rubik', sans-serif;
+    margin: 0 15px 15px 0;
+    width: 100%;
+    color: var(--yellow-primary);
+    animation-name: titulo;
+    animation-duration: 2s;
+    animation-delay: 1.5s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    
+}
+ @keyframes titulo {
+        0% {
+            translate:(100px);
+            opacity:0;
+        }
+
+        100%{
+            translate:(0px);
+            opacity: 1;
+        }
+ }
+
+section#Home  div.texto h5{
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    margin: 35px 0 45px 0;
+    width: 100%;
+    animation-name: hometexto;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+@keyframes hometexto {
+    0% {
+        translate: (100px);
+        opacity: 0;
+    }
+
+    100% {
+        translate:(0px);
+        opacity: 1;
+    }
+}
+    
+#botao-contato{
+    text-decoration: none;
+    margin: 12px 10px 10px 0;
+    padding: 12px 15px 12px 12px;
+    font-family: 'Rubik', sans-serif;
+    border: 2px solid #e8d524;
+    border-radius: 4px;
+    color: var(--yellow-primary);
+    text-align: center;
+    width: 100%;   
+    animation-name: botaocontato;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes botaocontato {
+    0% {
+        translate: (100px);
+        opacity: 0;
+    }
+    100% {
+        translate:(0px);
+        opacity: 1;
+    }
+}
+#botao-contato:hover{
+    color:var(--blue-primary);
+    background-color: var(--yellow-primary);
+    transition: 0.5s;
+}
+
+#botao-Meusprojetos {
+    text-decoration: none;
+    margin: 15px 10px 10px 25px;
+    padding: 13px;
+    width: 100%;
+    font-family: 'Rubik', sans-serif;
+    border: 2px solid #020412;
+    border-radius: 4px;
+    color: var(--blue-primary);
+    background-color: var(--yellow-primary);
+    animation-name: botaoprojetos;
+    animation-duration: 1s;
+    animation-delay: 3.2s;
+    opacity: 0;
+    animation-fill-mode: forwards; 
+}
+@keyframes botaoprojetos {
+    0% {
+        translate: (100px);
+        opacity: 0;
+    }
+    100% {
+        translate:(0px);
+        opacity: 1;
+    }
+}
+
+#botao-Meusprojetos:hover{
+    color:var(--yellow-primary);
+    background-color: var(--blue-primary);
+    border: 2px solid #e8d524;
+    transition: 0.5s;
+}
+
+@media (max-width: 800px){
+    section#Home{
+        flex-direction: column-reverse;
+        width:100vw;
+        margin:0;
+        height: auto;
+      
+      
+
+    }
+    section#Home  div.texto h1{
+        font-size: 30px;
+        margin: 0 10px 10px 0;
+        width: 100%;
+        height: auto;
+        
+    }
+    section#Home  div.texto p{
+        font-size: 16px;
+        margin:15px 0px  25px 0px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    #botao-contato{
+        padding: 10px;
+        margin: 15px 10px 10px 0 
+        
+    }
+    #botao-Meusprojetos{
+        padding:10px;
+        margin: 10px;   
+    }
+
+
+    
+
+}
+
+
+
+/* Segunda div class = imagem */
+section#Home  div.imagem{
+    width: 40%;
+}
+
+section#Home  div.imagem figure img{
+    width: 100%;
+    animation-name: img;
+    animation-duration: 1s;
+    animation-delay: 2.2s;
+    opacity: 0;
+    animation-fill-mode: forwards; 
+}
+@keyframes img {
+    0% {
+        translate: (100px);
+        opacity: 0;
+    }
+    100% {
+        translate:(0px);
+        opacity: 1;
+    }
+}
+
+
+
+/* Sobre */
+section#Sobre{
+    width: 100%;
+    margin-top: 150px;
+}
+
+section#Sobre h2{
+    text-align: center;
+    font-weight: 500;
+     margin-bottom: 65px;
+     background-color: var(--white-text);
+     color: var(--blue-primary);
+     padding: 15px;
+     text-shadow: var(--blue-primary);
+}
+
+section#Sobre #box-text{
+    max-width: 850px;
+    padding: 15px;
+    margin: 0 auto;
+    background-color: #FFF0F0;
+   
+  
+}
+
+section#Sobre #box-text div{
+    margin: 20px;
+    padding: 12px 24px;
+    background-color: #FFF0F0;
+    border: 1px dashed #050b38 ;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: white;
+}
+section#Sobre #box-text div p{
+    background-color: #FFF0F0;
+    color: black;
+}
+
+section#Sobre #box-text ul li{
+    background: #FFF0F0;
+    color: black;
+    margin: 20px 0; 
+    display: flex;
+    justify-content: space-between;
+
+}
+section#Sobre #box-text ul li img{
+    background-color:#FFF0F0 ;
+    height: 20px;
+    width: 15px;
+}
+
+@media (max-width: 800px){
+    section#Sobre #box-text{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+  
+}
+
+
+/* Portfolio    */
+
+section#Portifolio {
+    width: 100%;
+    margin-top: 150px;
+}
+
+section#Portifolio h2{
+    text-align: center;
+    font-weight: 500;
+     margin-bottom: 65px;
+     background-color: var(--yellow-primary);
+     color: black;
+     padding: 15px;
+     text-shadow: var(--white-text);
+}
+
+section#Portifolio .container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ 
+ 
+}
+section#Portifolio .container .card{
+
+    border: 1px solid blue;
+    margin: 20px 20px 70px 20px;
+    padding: 15px;
+    max-width: 650px;
+   
+  
+}
+section#Portifolio .container .card h4{
+    margin: 5px 2px 10px 2px;
+    color: var(--yellow-primary);
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: white;
+    
+}
+section#Portifolio .container .card p{
+    font-weight: 400;
+    font-size: 18px;
+    margin: 15px;
+}
+section#Portifolio .container .card ul{
+    margin: 15px 15px 15px 25px;
+}
+
+section#Portifolio .container .card ul li{
+   margin: 5px;
+   
+}
+section#Portifolio .container .card  #botao-acessar {
+  
+    text-align: center;
+    margin: 25px;
+    font-size: 18px;
+    border: 1.5px solid #e8d524;
+    color: #e8d524;
+    padding: 12px;
+
+    
+}
+
+section#Portifolio .container .card  #botao-acessar:hover{
+    background-color: var(--yellow-primary);
+    border: 1px solid white ;
+}
+
+
+section#Contato {
+  
+   
+    margin: 0 auto;
+}
+
+section#Contato h1{
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-size: 55px;
+    margin: 150px 0 150px 0; 
+    text-shadow: blue;
+  
+}
+
+section#Contato ul{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+section#Contato div#container{
+    background-color: white;
+
+}
+
+section#Contato ul li {
+    margin: 30px;
+    list-style: none;
+    padding: 10px;
+
+
+}
+
+section#Contato ul li img{
+    width: 65px;
+    height: 60px;
+}
+
+section#Contato ul li:hover{
+    background-color: var(--yellow-primary);
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px){
+    section#Contato h1{
+        font-size: 30px;
+        margin: 150px 0 100px 0; 
+
+    }
+    section#Contato div#container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    section#Contato ul{
+       flex-direction: column;
+       align-items: center;
+
+    }
+
+   
+
+}
+
+
+footer{
+    text-align: center;
+    background-color: var(--yellow-primary);
+    
+}
+
+footer h1 {
+    color: black;
+}
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
