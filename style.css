@@ -68,6 +68,11 @@ header nav ul li{
     margin: 20px;
 }
 
+header nav ul li a:hover{
+    color: var(--yellow-primary);
+}
+
+
 @media (max-width: 600px){
     header {
         display: block;
@@ -231,16 +236,35 @@ section#Home  div.texto h5{
     transition: 0.5s;
 }
 
-@media (max-width: 800px){
+@media (max-width: 600px){
     section#Home{
         flex-direction: column-reverse;
         width:100vw;
         margin:0;
         height: auto;
+    }
+    section#Home  div.texto h5 {
+        font-size: 15px;
+        margin: 35px 0 30px 0;
+    }
+
+   section#Home div.texto #botao-contato{
+        margin: 7px 2px 10px 0px;
+        padding: 8px;
+    }
+
+  section#Home div.texto  #botao-Meusprojetos{
+        margin: 15px 0px 10px 5px;
+        padding: 8px;
+    }
+    section#Home  div.texto h1{
+        display: block;
+    }
+
       
       
 
-    }
+ }
     section#Home  div.texto h1{
         font-size: 30px;
         margin: 0 10px 10px 0;
@@ -267,7 +291,7 @@ section#Home  div.texto h5{
 
     
 
-}
+
 
 
 
@@ -294,6 +318,8 @@ section#Home  div.imagem figure img{
         opacity: 1;
     }
 }
+
+
 
 
 
