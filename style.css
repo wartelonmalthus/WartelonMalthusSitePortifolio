@@ -440,7 +440,7 @@ section#Portifolio .container .card h4{
     text-shadow: white;
     
 }
-section#Portifolio .container .card p{
+section#Portifolio .container .card a{
     font-weight: 400;
     font-size: 18px;
     margin: 15px;
@@ -459,8 +459,10 @@ section#Portifolio .container .card  #botao-acessar {
     margin: 25px;
     font-size: 18px;
     border: 1.5px solid #e8d524;
-    color: #e8d524;
+    color: white;
     padding: 12px;
+    display: flex;
+    justify-content: center;
 
     
 }
@@ -468,6 +470,7 @@ section#Portifolio .container .card  #botao-acessar {
 section#Portifolio .container .card  #botao-acessar:hover{
     background-color: var(--yellow-primary);
     border: 1px solid white ;
+    color:#020412;
 }
 
 
